@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link se utiliza para vinvular recursos externos a una documento HTML  -->
+     <link rel="stylesheet" href="">
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <p>Este es un ejemplo de enlace interno</p>
+    <ul>
+        <!-- el '#' hace referencia a la misma pagina -->
+        <li><a href="#seccion1">Ir a la seccion 1</a></li>
+        <li><a href="#seccion2">Ir a la seccion 2</a></li>
+    </ul>     
+    <p>Este es un ejemplo de un enlace externo a otra pagina web</p>
+    <a href="https://chatgpt.com/" target="_blank">Visitar ejemplo</a>
+
+    <h1>Hola mundo</h1>
+    <input type="submit" value="Enviar">
+    <!-- id es una etiqueta unica -->
+    <p id="texto"> es un texto</p>   
+    <!-- las clases - class es para un conjunto de etiquetas  -->
+    <input type="color" class="selector">
+    <!-- herarquia de titulos -->
+     <h1>Titulo 1</h1>
+     <h2>Titulo 2</h2>
+     <h3>Titulo 3</h3>
+     <h4>Titulo 4</h4>
+     <h5>Titulo 5</h5>
+     <h6>Titulo 6</h6>
+     <!-- la letra "p" es para textos -->
+      <!-- la etiqueta strong: sirve para subrrayar en negrilla -->
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong>Exercitationem necessitatibus amet minima illum, ad cum sint vitae voluptatum delectus ipsam sit recusandae impedit. Modi</strong>  officiis voluptatum soluta earum, sint impedit?</p>
+      <!-- la etiqueta ul: se usa para hacer una lista desordenada -->
+       <!-- la etiqueta li: se usa -->
+       <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+       </ul>
+       <!-- la etiqueta ol: se usa para hacer una lista ordenada -->
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+        <!-- la etiqueta de img: nos sirve para insertar imagenes -->
+         <!-- alt es un nombre opcional que se le da a la imagen si no carga o describir que esta en la imagen -->
+         <img src="./images/bmw.jpg" alt="carro">
+        <!-- br: es para dar espacios ( es una mala practica de programacion //se usa si no se logra dar el espacio desde el css) -->
+        <br>
+        <br>
+         
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor voluptas, consectetur facere sequi quod delectus officia labore fuga quidem in unde, repudiandae quos quia maxime hic, minus itaque odit aspernatur.</p>
+            <!-- input: se usa para crear controles interactivos que permiten a los usuarios ingresar datos  -->
+
+         <input type="text" name="nombre">
+
+         <input type="password" name="password" id="">
+         <input type="checkbox" name="" id="">
+
+         <input type="radio" name="hola" id="">
+         <!-- para que no queden enlazados, toca cambiar el nombre  -->
+         <input type="radio" name="" id="">
+            <!-- restablecer los campos del formulario -->
+         <input type="reset" value="Restablecer">
+        <!-- etiqueta para seleccionara archivos -->
+         <input type="file" name="Archivo" id="">
+<!-- para hacer secciones -->
+         <section id="seccion1">
+                <h2>seccion 1</h2>
+                <p>contenido de la primera seccion</p>
+         </section>
+
+            <section id="seccion2">
+                <h2>seccion 2</h2>
+                <p>Contenido de la segunda seccion </p>
+            </section>
+
+            <!-- enlaces especiales -->
+             <!-- manda un corro directo  -->
+             <a href="juandavid0420@gmail.com">Enviar un correo electronico</a>
+             <!-- si se esta en un dispositivo movil, llama directamente -->
+             <a href="tel:+573177507271">Llamar por telefono</a>
+             <!-- re dirige a whatsapp -->
+             <a href="https://api.whatsapp.com/send?phone=3177507271">abrir whatsapp</a>
+                <!-- div: se usa para -->
+             <div class="contenedor">
+                <h1>Titulo del contenedor</h1>
+                <p>Este parrafo esta dentro del contenedor</p>
+             </div>
+<!-- el "#" junto a un h1, lo completa con la id  -->
+             <h1 id="seccion1"></h1>
+             <!-- si tengo h1 junto ".", lo completa con una clase -->
+              <h1 class="hola"></h1>
+
+              <form action="/enviar.php" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+<!-- label es una etiqueta -->
+                <label for="email">Correo Electronico</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+
+            
+              </form>
+              
+              <h2>Elige tu navegador favorito</h2>
+              <input list="navegadores" name="navegador">
+              <datalist id="navegadores">
+                <option value="Chrome"></option>
+              <option value="Firefox"></option>
+              <option value="Safari"></option>
+              <option value="Edge"></option>
+              <option value="Value"></option>
+
+
+              </datalist>
+
+              <details>
+                <summary>Descripcion</summary>
+                <p>Este es un producto de alta calidad con caracteristicas
+                    opcionales
+                </p>
+              </details>
+
+              <h2>Boton de ejemplo</h2>
+              <button>Saludar</button>
+
+              <!-- controls: para ponerle los botones de fondo -->
+               <video></video>
+              
+         
+</body>
+</html>
